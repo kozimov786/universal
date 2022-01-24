@@ -6,6 +6,7 @@ import gallery from '../../images/gallery.png';
 import girlBg from '../../images/girl-bg.png';
 import dots from '../../images/dots.svg';
 import AvatarImg from '../../images/avatar-women.svg';
+import ButtonItem from '../part/ButtonItem';
 
 export default function Readers() {
   return (
@@ -35,9 +36,26 @@ export default function Readers() {
             </div>
 
           </div>
-          <div className="div2"> </div>
-          <div className="div3"> </div>
-          <div className="div4"> </div>
+          <div className="div2">
+
+            <div>
+              <span className='carrers' >CARREERS</span>
+              <h3>Had a Job Interview but No Callback? Here’s What to Do</h3>
+              <p>Try to understand the culture of the company where you want to work and be authentic in your interview, experts emphasize</p>
+              < ButtonItem />
+            </div>
+            <img src={girlBg} alt="" />
+          </div>
+          <div className="div3">
+            <h3>Is Coffee Bad for Bones?</h3>
+            <p>Coffee drinkers may excrete more calcium, but it doesn’t appear to weaken bones</p>
+            <span>Oct 15</span>
+          </div>
+          <div className="div4">
+            <h3>What We Manufacture</h3>
+            <p>A global history of the factory and the modern world that all should read</p>
+            <span>Oct 14</span>
+          </div>
         </Grid>
       </div>
     </Wrapper>
@@ -138,18 +156,59 @@ const Grid = styled.div`
       grid-area: 1 / 3 / 3 / 5;
       width: 555px;
        height: 370px;
-       background-color: #fff;
+       background-color: #D0E2EB;
        border-radius: 10px;
+       display: flex;
+       align-items: center;
+       padding: 35px;
+
+       img{
+        width: 275px;
+        height: 352px;
+        margin-top: 14px;
+
+       }
+       .carrers{
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.5px;
+        color: #6E99AE;
+      }
+      h3{
+         margin-top: 20px;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        margin-bottom: 15px;
+       }
+       p{
+         margin-bottom: 25px;
+       }
 
 
     }
+
+
     .div3 {
       grid-area: 3 / 3 / 4 / 4;
       width: 263px;
        height: 170px;
        background-color: #fff;
        border-radius: 10px;
-
+      padding: 25px;
+      h3{
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+      }
+      span{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #939699;
+        margin-top: 5px;
+      }
 
     }
     .div4 {
@@ -158,6 +217,22 @@ const Grid = styled.div`
        height: 170px;
        background-color: #fff;
        border-radius: 10px;
+      padding: 25px;
+      h3{
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+      }
+      span{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #939699;
+        margin-top: 5px;
+      }
+
+    }
 
 
     }
