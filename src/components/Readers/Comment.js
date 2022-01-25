@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 
@@ -10,9 +10,11 @@ import commentIcon from '../../images/comment.svg';
 import GoodIcon from '../../images/good.png';
 import BadIcon from '../../images/bad.png';
 
+const send = true
+
 export default function Comment(props) {
 
-  const [send, setSend] = useState(true)
+
 
   return (
     <>
