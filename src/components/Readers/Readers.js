@@ -42,7 +42,7 @@ export default function Readers() {
               <span className='carrers' >CARREERS</span>
               <h3>Had a Job Interview but No Callback? Here’s What to Do</h3>
               <p>Try to understand the culture of the company where you want to work and be authentic in your interview, experts emphasize</p>
-              < ButtonItem />
+              < ButtonItem text='Read more' />
             </div>
             <img src={girlBg} alt="" />
           </div>

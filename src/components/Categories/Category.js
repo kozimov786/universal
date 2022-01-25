@@ -175,6 +175,10 @@ margin-bottom: 10px;
  .action_flex{
    width: 130px;
    margin-top: 20px;
+   color: #939699;
+   font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
  }
 
  .varies_flex{

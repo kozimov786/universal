@@ -21,7 +21,7 @@ export default function TabItem() {
         <span className='destionation'>Destionation</span>
         <h2>In Southeast England, White Cliffs and Fish</h2>
         <Wrapper>
-          <ButtonItem />
+          <ButtonItem text='Read more' />
           <MusicBox>
             <img className='play' src={playImg} alt="" />
             <p>

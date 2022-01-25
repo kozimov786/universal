@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import freedom from '../../images/freedom.png';
 import LogoImg from '../../images/logo.svg';
@@ -13,7 +14,9 @@ export default function HeaderMid() {
           <img className='freedom' src={freedom} alt="" />
           <p>Boston and New York Bear Brunt</p>
         </div>
-        <img className='logo' src={LogoImg} alt="" />
+        <Link to='/'>
+          <img className='logo' src={LogoImg} alt="" />
+        </Link>
         <div className='flex'>
           <time>Monday, January 1, 2018</time>
           <div className='flex'>

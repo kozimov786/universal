@@ -3,12 +3,12 @@ import React from 'react';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 
-export default function ButtonItem() {
+export default function ButtonItem({ text }) {
   return (
-    <ButtonWrapper>
+    <ButtonWrapper text={text}>
       <button>
         <span>
-          <span>Read More</span>
+          <span>{text}</span>
           <span><ArrowRightAltIcon /></span>
         </span>
       </button>

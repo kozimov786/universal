@@ -10,7 +10,7 @@ export default function Middle() {
       <div className="container box">
         <h2>The Big Bloom or «How Flowering
           Plants Changed the World»</h2>
-        < ButtonItem />
+        < ButtonItem text='Read more' />
       </div>
     </Wrapper>
   )

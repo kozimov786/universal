@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 
 export default function Menu() {
   return (
@@ -7,7 +8,7 @@ export default function Menu() {
       <div className="container">
         <MenuList>
           <li>
-            <a href="/">NEWS</a>
+            <Link to="/detail">NEWS</Link>
           </li>
           <li>
             <a href="/">OPINION</a>
