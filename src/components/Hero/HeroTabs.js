@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import TabItem from './TabItem';
 import TabList from './TabList';
 
+
 export default function HeroTabs() {
+
+  const [toggle, setToggle] = useState(1)
+
   return (
     <TabsBox>
-      <TabItem />
-      <TabList />
+      <TabItem toggle={toggle} setToggle={setToggle} />
+      <TabList toggle={toggle} setToggle={setToggle} />
     </TabsBox>
   )
 }

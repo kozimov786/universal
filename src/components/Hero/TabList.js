@@ -2,29 +2,35 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-export default function TabList() {
+export default function TabList({ toggle, setToggle }) {
+  const toggleHandler = (index) => {
+    setToggle(index)
+  }
 
   return (
     <TabListBox>
       <p className='recommend'>Recommended for you</p>
       <ListTab>
-        <li>
+        <li
+          className={toggle === 1 ? "active-tabs" : ""}
+          onClick={() => toggleHandler(1)}
+        >
           <span className='food'>Food</span>
           <p>For Chicken-Fried Steak, Too Much Is Just Enough</p>
         </li>
-        <li>
+        <li className={toggle === 2 ? "active-tabs" : ""} onClick={() => toggleHandler(2)}>
           <span className='cars'>Cars</span>
           <p>Storm Has Car Dealers Doing Swift Business</p>
         </li>
-        <li>
+        <li className={toggle === 3 ? "active-tabs" : ""} onClick={() => toggleHandler(3)}>
           <span className='movies'>Movies</span>
           <p>War Is Hell? In New Military Dramas, It’s One-Dimensional</p>
         </li>
-        <li>
+        <li className={toggle === 4 ? "active-tabs" : ""} onClick={() => toggleHandler(4)}>
           <span className='nfl'>NFL</span>
           <p>11 surprising stat rankings for active NFL players</p>
         </li>
-        <li>
+        <li className={toggle === 5 ? "active-tabs" : ""} onClick={() => toggleHandler(5)}>
           <span className='tech'>Tech Reviews</span>
           <p>The bookcases you can buy online and assemble yourself</p>
         </li>
@@ -47,7 +53,24 @@ line-height: 20px;;
 const ListTab = styled.ul`
  display: flex;
  flex-direction: column;
+ .active-tabs{
+   background-color: #f2f2f2;
+   position: relative;
+   &::before{
+     content: '';
+     display: block;
+     width: 0;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right:10px solid #fff;
 
+   }
+ }
 
  li{
   padding: 19px 25px;
